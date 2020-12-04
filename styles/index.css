@@ -1,0 +1,76 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  background-color: #021729;
+}
+
+.header {
+  color: white;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.cardano-logo {
+  width: 120px;
+  height: 120px;
+}
+
+.main-content {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #243648; */
+  color: white;
+}
+
+.content-block {
+  width: 40%;
+}
+
+.content-block:nth-child(2n + 1) {
+  align-self: flex-start;
+}
+
+.content-block:nth-child(2n) {
+  align-self: flex-end;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #55b0ffe5;
+}
+
+@media (max-width: 720px) {
+  .content-block {
+    width: 100%;
+  }
+
+  .content-block > p {
+    font-size: 20px;
+  }
+}
